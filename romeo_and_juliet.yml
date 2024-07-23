@@ -1,2 +1,3 @@
-- include: scene01.yml
+- import_playbook: linux.yml
+- import_playbook: scene01.yml
 

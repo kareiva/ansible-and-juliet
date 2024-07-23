@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: Install text-to-speech engine
+      become: yes
+      become_method: sudo
+      ansible.builtin.package:
+        name: "espeak"
+        state: present
+      when: ansible_system == "Linux"

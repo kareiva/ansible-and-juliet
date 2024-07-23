@@ -1,16 +1,20 @@
 Ansible and Juliet
 ==================
 
-This is an Ansible playbook, intended to cast a hapless college Mac lab into an unexpected scheduled Shakespearean performance.
+This is an Ansible playbook, intended to cast a hapless college Mac/Linux lab into an unexpected scheduled Shakespearean performance.
 
 If you need Ansible, see http://ansibleworks.com or http://github.com/ansible/ansible
 
 Setup
 =====
 
-Start with an Ansible install on an OS X control machine, and check out this project:
+Start with an Ansible install on a control machine, and check out this project:
 
     cd ansible-and-juliet/
+
+On a Linux machine, install the `community.general` module:
+
+    ansible-galaxy collection install community.general
 
 In the hosts file, change the host addresses to computers you wish to enlist:
 
